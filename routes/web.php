@@ -16,3 +16,4 @@ Route::get('/', 'PostsController@index');
 // whereを使って数字しか{post}に入らないようにしている
 Route::get('/posts/{post}', 'PostsController@show')->where('post', '[0-9]+');
 Route::get('/posts/create', 'PostsController@create');
+Route::post('/posts', 'PostsController@store');
