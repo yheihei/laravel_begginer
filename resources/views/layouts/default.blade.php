@@ -10,5 +10,8 @@
   <div class="container">
     @yield('content')
   </div>
+  <div class="container">
+    @include('calendar.date')
+  </div>
 </body>
 </html>
